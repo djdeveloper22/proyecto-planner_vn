@@ -13,7 +13,7 @@ i {
 a,
 i {
   text-decoration: none;
-  color: #ddc5b0;
+  color: #966840;
   font-size: 18px; }
   a:hover,
   i:hover {
@@ -130,7 +130,8 @@ header .container {
   z-index: 2; }
 
 .spacing-carrito {
-  margin-left: 1rem; }
+  margin-left: 1rem;
+  width: 100px; }
   .spacing-carrito a {
     background-color: #25d366;
     color: white; }
@@ -187,11 +188,14 @@ header .container {
   height: 70px; }
 
 .container_card__btn > button {
-  background: #f7f2ed;
-  background: linear-gradient(352deg, #f4e7da 0%, #f5e6d9 51%, #f3ede7 100%);
-  color: #080808;
+  background: #FFF;
+  color: #C29B80;
   border: none;
   margin-left: .4rem; }
+
+.container_card__btn > button:hover {
+  background: linear-gradient(352deg, #fff 0%, #F4E7DA 51%, #adabaa);
+  transition: all 10s ease; }
 
 .modal-producto {
   color: #080808; }
@@ -254,13 +258,15 @@ footer {
   color: #0c0c0c; }
 
 .bg-sale {
-  background-color: #25d366;
+  background-color: #464543;
   color: #fff;
   width: 3rem; }
 
 .btn-carrito {
-  background-color: #3636fe;
   padding: 0.7rem;
   color: whitesmoke;
   width: 10rem;
   border-radius: 0.3rem; }
+
+.btn-primary {
+  background-color: #d29151 !important; }

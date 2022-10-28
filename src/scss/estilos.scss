@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+
 body {
   font-family: "Open Sans", sans-serif;
   width: 100%;
@@ -16,7 +17,7 @@ i {
 a,
 i {
   text-decoration: none;
-  color: #ddc5b0;
+  color: #966840;
   font-size: 18px;
   &:hover {
     transition: all 0.4s ease;
@@ -160,6 +161,7 @@ header .container {
 
 .spacing-carrito{
   margin-left: 1rem;
+  width: 100px;
   a{
     background-color: #25d366;
     color: white;
@@ -229,11 +231,17 @@ header .container {
   height: 70px;
 }
 .container_card__btn > button{
-  background: rgb(247, 242, 237);
-  background: linear-gradient(352deg, rgba(244,231,218,1) 0%, rgb(245, 230, 217) 51%, rgb(243, 237, 231) 100%);
-  color: #080808;
+  background: #FFF;
+  color: #C29B80;
   border: none;
   margin-left: .4rem;
+}
+
+.container_card__btn > button:hover{
+    
+    background: linear-gradient(352deg, #fff 0%, #F4E7DA 51%, #adabaa );
+    transition: all 10s ease;
+
 }
 
 .modal-producto{
@@ -312,15 +320,18 @@ footer {
 }
 
 .bg-sale {
-  background-color: #25d366;
+  background-color: #464543;
   color: #fff;
   width: 3rem;
 }
 
 .btn-carrito {
-  background-color: rgb(54, 54, 254);
   padding: 0.7rem;
   color: whitesmoke;
   width: 10rem;
   border-radius: 0.3rem;
+}
+
+.btn-primary{
+  background-color: #d29151 !important;
 }

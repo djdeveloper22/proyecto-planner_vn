@@ -44,7 +44,6 @@
                 })}}</span>
               <div>
                 <i @click="removeFromCart(index)" class="bi bi-x-circle-fill fs-5"></i>
-
               </div>
             </div>
           </div>
@@ -88,27 +87,27 @@
       </video>
       <!-- The header content -->
       <div class="container d-flex flex-column w-100 h-100">
-        <nav class="navbar navbar-expand-lg">
+        <nav>
           <div class="container-fluid">
-            <figure class="logo-header">
-              <img src="./src/assets/img/ap_studies.PNG" alt="">
-            </figure>
-            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ms-auto">
-                <li class="d-none nav-item text-center mb-3">
-                  <i class="bi bi-envelope-fill mx"></i><a href="#footer">Contacto</a>
-                </li>
-                <li class="spacing-carrito" id="carrito"><a @click="toggled = true" style="cursor: pointer;"
-                    class="nav-link fw-bold position-relative btn btn-success p-1"> Carrito <i
-                      class="bi bi-cart4"></i><span
-                      class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
-                      id="contadorCart">{{cart.length}}<span class="visually-hidden">unread messages</span></span></a>
-                </li>
-              </ul>
+            <div class="row">
+              <div class="col-7">
+                <figure class="logo-header mt-1">
+                  <img src="./src/assets/img/ap_studies.PNG" alt="">
+                </figure>
+              </div>
+              <div class="col-5">
+                <ul class="navbar-nav ms-auto h-100 justify-content-center align-items-end">
+                  <li class="d-none nav-item text-center mb-3">
+                    <i class="bi bi-envelope-fill mx"></i><a href="#footer">Contacto</a>
+                  </li>
+                  <li class="spacing-carrito" id="carrito"><a @click="toggled = true" style="cursor: pointer;"
+                      class="nav-link fw-bold position-relative btn btn-success p-1"> Carrito <i
+                        class="bi bi-cart4"></i><span
+                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                        id="contadorCart">{{cart.length}}<span class="visually-hidden">unread messages</span></span></a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </nav>
@@ -153,7 +152,7 @@
       <section class="p-3 container">
         <div class="row">
           <div class="col wow animate__animated animate__slideInUp text-center mb-5">
-            <h3 class="display-5 mt-4">Dated 2022 Digital Planners</h2>
+            <h3 class="display-5 mt-4" style="color: #6F665D">Dated 2022 Digital Planners</h2>
               <p class="lead fs-3">
                 Todos tenemos esperanzas, sueños y aspiraciones en la vida. La planificación puede servir como hoja de
                 ruta o guía para hacer realidad esos sueños.
@@ -168,7 +167,7 @@
               allowfullscreen></iframe>
           </div>
           <div class="col-12 col-md-6 text-center wow animate__animated animate__bounceInRight">
-            <h2>¿Qué es una agenda digital?</h2>
+            <h2 style="color: #6F665D">¿Qué es una agenda digital?</h2>
             <p style="font-size: 20px; text-align: justify;">Son versiones digitales de una agenda de papel tradicional
               pero con un toque único. En formato PDF interactivo puedes moverte a cualquier día, semana o mes con un
               solo clic. Estas agendas digitales imitan la apariencia de una agenda tradicional. ¡Estos documentos PDF
@@ -178,7 +177,7 @@
           </div>
         </div>
         <div class="row">
-          <h2 class="display-4 text-center mt-5 pb-3 wow animate__animated animate__fadeInUp">Nuestras Agendas Digitales
+          <h2 class="display-4 text-center mt-5 pb-3 wow animate__animated animate__fadeInUp" style="color:#6F665D">Nuestras Agendas Digitales
           </h2>
           <div class="container__card" v-if="products.length > 0">
             <div class="bg-image wow animate__animated animate__fadeInUp  rounded-4" v-for="product in products"
@@ -201,7 +200,7 @@
                   <div class="container_card__btn d-flex">
                     <button class="p-2 rounded-2 border-0" data-bs-toggle="modal"
                       :data-bs-target="'#exampleModal_'+product.id">Ver producto</button>
-                    <button class="bg-light border-0 rounded-2" @click="addToCart(product)">Agregar al Carrito</button>
+                    <button class="border-0 rounded-2" @click="addToCart(product)">Agregar al Carrito</button>
                   </div>
                 </div>
                 <!-- Modal -->
@@ -250,9 +249,9 @@
     </main>
 
 
-    <footer data-bs-spy="scroll" data-bs-target="#footer" class="text-center text-lg-start bg-white text-muted">
+    <footer data-bs-spy="scroll" data-bs-target="#footer" class="text-center text-lg-start text-muted mt-5" style="background-color: #F4E7DA;">
       <!-- Section: Social media -->
-      <section id="footer" class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <section id="footer" class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom" style="color: #6F665D">
         <!-- Left -->
         <div class="wow animate__animated animate__bounceInLeft me-5 d-none d-lg-block">
           <span>Get connected with us on social networks:</span>
@@ -276,7 +275,7 @@
       <!-- Section: Social media -->
 
       <!-- Section: Links  -->
-      <section class="">
+      <section style="color: #63666a">
         <div class="wow animate__animated animate__fadeInUp container text-center text-md-start mt-5">
           <!-- Grid row -->
           <div class="row mt-3">
@@ -361,7 +360,7 @@
       <!-- Section: Links  -->
 
       <!-- Copyright -->
-      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025)">
+      <div class="text-center p-4" style="background-color: #464543; color: #F4E7DA">
         © 2022 Copyright:
         <a class="text-reset fw-bold" href="https://pimepanama.com/">pimepanama</a>
       </div>
