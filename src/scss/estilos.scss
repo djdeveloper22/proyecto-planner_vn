@@ -162,12 +162,18 @@ header .container {
 .spacing-carrito{
   margin-left: 1rem;
   width: 100px;
+
   a{
-    background-color: #25d366;
-    color: white;
+    background-color: #C29B80;
+    color: #FFF;
     i{
-      color: white;
+      color: #FFF;
     }
+  }
+  .btn-success:hover{
+    background-color: #6F665D !important;
+    border: none;
+    color: #FFF;
   }
 }
 
@@ -255,7 +261,7 @@ footer {
 
 //estilos boton whatsapp
 .container__btn-whatsapp {
-  background-color: #25d366;
+  background-color: #C29B80;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -266,9 +272,9 @@ footer {
   bottom: 1rem;
   right: 1rem;
   z-index: 4;
-  border: solid 2px #09311e;
+  
   .fa-whatsapp {
-    color: #fff;
+    color: #F4E7DA;
     font-size: 2rem;
     margin-left: 0.2rem;
   }
@@ -321,7 +327,7 @@ footer {
 
 .bg-sale {
   background-color: #464543;
-  color: #fff;
+  color: #fff !important;
   width: 3rem;
 }
 
@@ -333,5 +339,29 @@ footer {
 }
 
 .btn-primary{
-  background-color: #d29151 !important;
+  background-color: #DBC2AA !important;
+  border: none;
+  &:hover{
+    background-color: #C29B80 !important;
+  }
+}
+
+.btn-warning{
+  background-color: #DBC2AA !important;
+  border: none;
+  &:hover{
+    background-color: #C29B80 !important;
+  }
+}
+
+.cart-items{
+  color: #464543;
+}
+
+.p-1, .bi-x-circle-fill{
+  color: #6F665D;
+}
+
+.estilo-total{
+  color: #C29B80;
 }
