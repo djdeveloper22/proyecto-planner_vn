@@ -20,6 +20,21 @@
 
 <body>
 
+  <div class="loading">
+    <figure>
+      <img src="./src/assets/img/ap_studies.PNG" alt="logo">
+    </figure>
+    <div class="lds-roller">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
   <div id="app" class="contaniner-app">
     <!-- seccion aviso agreando producto -->
     <div class="msj-producto hide alert alert-primary">
@@ -468,6 +483,19 @@
           const btnCarrito = document.querySelector('#btnCarrito');
           const btn_agregar = document.querySelectorAll('#btn_agregar');
           const msj = document.querySelector('.msj-producto');
+          
+          const body = document.querySelector('body');
+          const loading = document.querySelector('.loading');
+          body.style.overflow = 'hidden';
+
+          function quit(body){
+            timeout = setTimeout(()=>{
+              body.style.overflow = 'visible';
+              loading.remove();
+            }, 4000);
+          }
+
+          quit(body);
         
           fetch(
             `https://cms.api.apexcms.cloud/v1/api/schemas`,
