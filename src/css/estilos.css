@@ -75,7 +75,7 @@ h1 {
   font-size: 28px; }
 
 .productosCarrito {
-  border-bottom: 1px solid #cfcf;
+  border-bottom: 1px solid #DED3CF;
   height: 42vh;
   overflow: auto; }
 
@@ -134,6 +134,7 @@ header .container {
   width: 100px; }
   .spacing-carrito a {
     background-color: #C29B80;
+    border: none !important;
     color: #FFF; }
     .spacing-carrito a i {
       color: #FFF; }
@@ -291,3 +292,6 @@ footer {
 
 .estilo-total {
   color: #C29B80; }
+
+.bi-tiktok, .bi-google, .bi-instagram {
+  color: #FFF0C9; }

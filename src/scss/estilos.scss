@@ -94,7 +94,7 @@ h1 {
 }
 
 .productosCarrito{
-  border-bottom: 1px solid #cfcf;
+  border-bottom: 1px solid #DED3CF;
   height: 42vh;
   overflow: auto;
 }
@@ -162,9 +162,10 @@ header .container {
 .spacing-carrito{
   margin-left: 1rem;
   width: 100px;
-
+  
   a{
     background-color: #C29B80;
+    border: none !important;
     color: #FFF;
     i{
       color: #FFF;
@@ -223,19 +224,23 @@ header .container {
   margin: 0 auto;
   
 }
+
 .bg-image{
   background-image: url('/src/assets/img/splanner1.png');
 }
+
 .miCard{
   background-color:  #4c3a0d78;
   padding: 1rem 1rem;
   height: 26rem;
   color: #fff;
 }
+
 .logo__card{
   width: 70px;
   height: 70px;
 }
+
 .container_card__btn > button{
   background: #FFF;
   color: #C29B80;
@@ -284,6 +289,7 @@ footer {
   color: #fff;
   -webkit-animation: pulse 1.5s infinite;
 }
+
 @-webkit-keyframes pulse {
   0% {
     -moz-transform: scale(0.9);
@@ -364,4 +370,8 @@ footer {
 
 .estilo-total{
   color: #C29B80;
+}
+
+.bi-tiktok, .bi-google, .bi-instagram{
+  color: #FFF0C9;
 }
